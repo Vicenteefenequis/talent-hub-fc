@@ -1,0 +1,8 @@
+@startuml
+
+:Candidato: -> (Aplicar para vagas)
+:Candidato: -> (Atualizar perfil)
+:Candidato: -> (Criar conta)
+:Candidato: -> (Consultar vagas)
+
+@enduml

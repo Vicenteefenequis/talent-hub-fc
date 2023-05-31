@@ -1,0 +1,36 @@
+@startuml
+
+enum Status {
+   INSPECTION
+   RE_INSPECTION
+   ACTIVATED
+   DEACTIVATED
+   EXPIRED
+   BLOCKED
+}
+
+
+entity Job
+
+Job : uuid id 
+Job : string title 
+Job : number salary 
+Job : hideSalary boolean 
+Job : description string 
+Job : status Status 
+Job : owner string 
+Job : editors? string[]
+Job : company? Company
+Job : contracts? string[]
+Job : techs? string[]
+Job : availability? string
+Job : location? string
+Job : createdAt? Date
+Job : updatedAt? Date
+
+Job : isSalaryHidden()
+Job : salary()
+Job : attachCompany()
+Job : addEditors()
+
+@enduml
